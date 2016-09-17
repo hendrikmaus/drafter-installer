@@ -1,0 +1,22 @@
+{
+  "name": "hmaus/drafter-installer",
+  "description": "Install drafter in your php project with ease",
+  "type": "custom-installer",
+  "require-dev": {
+    "composer/composer": "^1.2"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Hendrik Maus",
+      "email": "aidentailor@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Hmaus\\Drafter\\": "src"
+    }
+  }
+}
