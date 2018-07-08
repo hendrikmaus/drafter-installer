@@ -26,3 +26,5 @@ echo "`${symlinked_bin}` OK"
 
 echo "Reading symlink"
 readlink "${symlinked_bin}"
+
+echo "Done"
