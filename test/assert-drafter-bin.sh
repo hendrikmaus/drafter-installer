@@ -12,17 +12,17 @@ readonly symlinked_bin="vendor/bin/drafter"
 
 echo "Checking ${original_bin}"
 if [ ! -f "${original_bin}" ]; then
-    echo "`${original_bin}` not found"
+    echo "${original_bin} not found"
     exit 1
 fi
-echo "`${original_bin}` OK"
+echo "${original_bin` OK"
 
 echo "Checking ${symlinked_bin}"
 if [ ! -f "${symlinked_bin}" ]; then
-    echo "`${symlinked_bin}` not found"
+    echo "${symlinked_bin} not found"
     exit 1
 fi
-echo "`${symlinked_bin}` OK"
+echo "${symlinked_bin} OK"
 
 echo "Reading symlink"
 readlink "${symlinked_bin}"
