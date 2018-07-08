@@ -1,0 +1,19 @@
+language: php
+
+php:
+  - 7.2
+
+before_install:
+  - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+  - sudo apt-get update -qq
+
+install:
+  - sudo apt-get install -yqq g++-4.8
+  - export CXX="g++-4.8"
+
+before_script:
+  - cd test && composer install --prefer-source --no-interaction
+  - git config --global user.name travis-ci
+  - git config --global user.email travis@example.com
+
+script: ./assert-drafter-bin.sh

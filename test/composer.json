@@ -1,0 +1,30 @@
+{
+    "name": "hmaus/drafter-installer-test",
+    "description": "Testing drafter-installer package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hendrik Maus",
+            "email": "aidentailor@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "hmaus/drafter-installer": "^1.0"
+    },
+    "extra": {
+        "drafter-installer-tag": "v3.2.7"
+    },
+    "scripts": {
+        "install-drafter": "Hmaus\\Drafter\\Installer::installDrafter",
+        "post-install-cmd": [
+            "@install-drafter"
+        ],
+        "post-update-cmd": [
+            "@install-drafter"
+        ]
+    }
+}

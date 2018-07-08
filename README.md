@@ -1,7 +1,9 @@
 # Drafter Installer
+
 Install [drafter](https://github.com/apiaryio/drafter) in your php project with ease.
 
 ## Installation
+
 The recommended way to install drafter-installer is composer:
 
 ```bash
@@ -13,7 +15,7 @@ Pass the [tag of drafter](https://github.com/apiaryio/drafter/tags) to install
 
 ```json
 "extra": {
-    "drafter-installer-tag": "v3.1.1"
+    "drafter-installer-tag": "v3.2.7"
 }
 ```
 
