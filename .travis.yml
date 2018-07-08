@@ -12,7 +12,7 @@ install:
   - export CXX="g++-4.8"
 
 before_script:
-  - composer install --prefer-source --no-interaction --dev
+  - cd test && composer install --prefer-source --no-interaction --dev
   - git config --global user.name travis-ci
   - git config --global user.email travis@example.com
 
