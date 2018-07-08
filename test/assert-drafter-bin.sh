@@ -15,7 +15,7 @@ if [ ! -f "${original_bin}" ]; then
     echo "${original_bin} not found"
     exit 1
 fi
-echo "${original_bin` OK"
+echo "${original_bin} OK"
 
 echo "Checking ${symlinked_bin}"
 if [ ! -f "${symlinked_bin}" ]; then
