@@ -6,10 +6,9 @@ else
     # Bash 4.3 and older chokes on empty arrays with set -u.
     set -eo pipefail
 fi
-shopt -s nullglob globstar
 
-readonly original_bin  = "vendor/apiaryio/drafter/bin/drafter"
-readonly symlinked_bin = "vendor/bin/drafter"
+readonly original_bin="vendor/apiaryio/drafter/bin/drafter"
+readonly symlinked_bin="vendor/bin/drafter"
 
 echo "Checking ${original_bin}"
 if [ ! -f "${original_bin}" ]; then
