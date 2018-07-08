@@ -8,7 +8,7 @@ else
 fi
 shopt -s nullglob globstar
 
-readonly original_bin = "/vendor/apiaryio/drafter/bin/drafter"
+readonly original_bin  = "vendor/apiaryio/drafter/bin/drafter"
 readonly symlinked_bin = "vendor/bin/drafter"
 
 echo "Checking ${original_bin}"
