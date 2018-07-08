@@ -16,4 +16,4 @@ before_script:
   - git config --global user.name travis-ci
   - git config --global user.email travis@example.com
 
-script: cd test && ./assert-drafter-bin.sh
+script: ./assert-drafter-bin.sh
