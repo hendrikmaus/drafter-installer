@@ -1,0 +1,21 @@
+name: drafter-installer-test
+
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Validate composer.json and composer.lock
+      working-directory: test
+      run: composer validate
+
+    - name: Run composer install
+      working-directory: test
+      run: composer install --prefer-source --no-interaction
+      
+    - name: Run assert-drafter-bin.sh
+      working-directory: test
+      run: ./assert-drafter-bin.sh
